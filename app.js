@@ -3,7 +3,7 @@ let bodyParser = require('body-parser')
 let request = require('request')
 let app = express()
 
-const FACEBOOK_ACCESS_TOKEN = 'EAACfsU8sOJwBABjyLLpRk3mfpPu8WTyeeXtcwngrdqAnN69QpNGYYo2hD620AvHhLZCoT9cAZAfYjlXHfLrfm'
+const FACEBOOK_ACCESS_TOKEN = 'EAACfsU8sOJwBAM9L5ZA58LZCBUJSmYkuc3RuTdfpeplxAm2yz84EnS2P6iZCyjkLekgZCf9AXG9ZBLu9zpOJZAw1Grt7oep8'
 const PORT = process.env.PORT || 3000
 const VERIFY_TOKEN = 'chatbot-class-1021'
 
