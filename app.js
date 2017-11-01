@@ -5,7 +5,7 @@ let app = express()
 
 const FACEBOOK_ACCESS_TOKEN = 'EAACfsU8sOJwBAP6ZCuWOzwSUYfByZBKuCcpCib7A4r1mqZB6rNsfUcvNZBZCd67tp0mKKehIC86S0rNkQR1yWFZATXZAyDVS7kmv4BwgjMnANTWxz9jQ1mIYcRXw4bvbNu92daRgUZCLQv1WN27cuFFWSkIti8ALDjpuxNM7uCNjngZDZD'
 const PORT = process.env.PORT || 3000
-const VERIFY_TOKEN = 'chatbot-class-hua-1021'
+const VERIFY_TOKEN = 'class-hua-1021'
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
