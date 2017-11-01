@@ -1,21 +1,21 @@
 let express = require('express')
 let bodyParser = require('body-parser')
 let request = require('request')
-let HashMap = require('hashmap')
+// let HashMap = require('hashmap')
 let app = express()
 
-var map = new HashMap();
+// var map = new HashMap();
 
-map.set("Hi", "Hi")
-.set("你好", "你好")
-.set("Hello", "Hello")
-.set("晚餐", "牛肉麵")
-.set("名字", "花志雄")
-.set("信箱", "chhua531001@gmail.com")
+// map.set("Hi", "Hi")
+// .set("你好", "你好")
+// .set("Hello", "Hello")
+// .set("晚餐", "牛肉麵")
+// .set("名字", "花志雄")
+// .set("信箱", "chhua531001@gmail.com")
 
-map.forEach(function(value, key) {
-    console.log(key + " : " + value);
-});
+// map.forEach(function(value, key) {
+//     console.log(key + " : " + value);
+// });
 
 const FACEBOOK_ACCESS_TOKEN = 'EAACfsU8sOJwBAKZBh0DNYBSZAwxbCHcvpzlHoXxNb1XYMVgDNCTZAJSx5RrciG45AqFXlu6ZCLw8V5qLPRW9cAs1ZBu4qYT2Lc9zC46rWnNemFkTHSLvhmiE0iwMEVd55XbwZAzbGiNtmiGH31Hry8xjddYNIe0HnfxesLAkVnUgZDZD'
 const PORT = process.env.PORT || 3000
@@ -46,13 +46,13 @@ app.post('/', function (req, res) {
 
                 var text = event.message.text
                 
-                    map.forEach(function(value, key) {
+                    // map.forEach(function(value, key) {
         
-                        if(text.indexOf(key) != -1) {
-                            text = value
-                        }                
-                        // console.log(key + " : " + value);
-                    });
+                    //     if(text.indexOf(key) != -1) {
+                    //         text = value
+                    //     }                
+                    //     // console.log(key + " : " + value);
+                    // });
 
                 sendMessage(event.sender.id, { text: text })
             }
