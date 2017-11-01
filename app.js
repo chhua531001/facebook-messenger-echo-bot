@@ -46,13 +46,13 @@ app.post('/', function (req, res) {
 
                 var text = event.message.text
                 
-                    map.forEach(function(value, key) {
-        
-                        if(text.indexOf(key) != -1) {
-                            text = value
-                        }                
-                        // console.log(key + " : " + value);
-                    });
+                map.forEach(function(value, key) {
+    
+                    if(text.indexOf(key) != -1) {
+                        text = value
+                    }                
+                    // console.log(key + " : " + value);
+                });
 
                 sendMessage(event.sender.id, { text: text })
             }
